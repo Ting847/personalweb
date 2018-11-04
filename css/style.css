@@ -1,0 +1,592 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    
+}
+
+::selection {
+    background:  rgb(212, 140, 138);
+    color: #ffffff;
+}
+::-moz-selection {
+    background:  rgb(212, 140, 138);
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+p{
+    margin: 0 !important;
+}
+@media (max-width: 576px){
+    .banner-title{
+        font-size: 22px;
+    }
+    .title{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .grayLine{
+        display: none;
+    }
+    h5{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .experience-box-year{
+        font-size: 14px;
+    }
+    .Banner .name{
+        width: 250px;
+        height: 60px;
+    }
+}
+.title{
+    font-weight: bold;
+}
+
+
+
+.Banner-bg{
+    background: lightblue url("../images/jeremy-thomas.jpg") no-repeat bottom; 
+    height: 100vh;
+    background-size: cover;
+}
+
+.Banner{
+    height: 100vh;
+    background-color: rgba(34, 83, 112, 0.7)/*#2253709a;*/
+}
+
+.Banner .personPic{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-color: gray;
+}
+
+.btn-text{
+    color: white;
+}
+
+.btn-a{
+    text-decoration: none;
+}
+.contact-info{
+    text-align:center;
+    color:white;
+}
+
+.contact-info i{
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.contact-info div:hover i{ 
+    transform: rotateY(360deg);
+}
+.testbtn{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(199, 92, 87);
+    border-radius: 5px;
+}
+
+.testbtn:hover{
+    background-color: rgb(212, 140, 138);
+}
+
+
+/*nav*/
+header{/*外面要包才能作用*/
+/* position: -webkit-sticky;
+    position: sticky;*/
+    top: 0;
+    width: 100%;
+}
+header .scroll{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+nav{
+    width: 100%;
+    background-color: #5285a3;
+}
+
+nav.scroll{
+    position: fixed;
+    top: 0px;
+    background-color: #5285a3e8;
+}
+
+nav ul{
+    overflow: hidden;/*!!!將超出的a li隱藏*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;/*動態效果*/
+}
+nav ul li{
+    display: inline-block;/*橫排*/
+}
+
+nav ul li a{ 
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 35px;
+    font-size: 20px;
+
+}
+nav ul li:hover a{ 
+    color: #fff;
+    background-color: rgb(212, 140, 138);
+}
+.menu-icon{
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    display: none;/**/
+}
+@media (max-width: 768px){
+    
+    
+    nav ul{
+        /*display: none;*/
+        max-height: 0em;/*消失*/
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    nav ul.showing{
+        /*display: block;*/
+        max-height: 30em; /*顯示*//*動態效果*/
+    }
+    .menu-icon{
+        display: block;
+    }
+    /*.abc{
+        display: none;
+    }*/
+}
+
+/**/
+
+.Introduction{
+    width: 100%;
+}
+
+.grayLine{
+    width: 100%;
+    height: 1px;
+    background-color: gray;   
+}
+
+.Experience{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.experience-box-year{
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5 );
+}
+
+.experience-box-content{
+    width: 80%;
+    padding:15px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5 );
+}
+
+@media (min-width: 768px){
+    .experience-wrap{
+        display: block;
+    }
+    .experience-wrap-mobile{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .experience-wrap{
+        display: none;
+    }
+    .experience-wrap-mobile{
+        display: block;
+    }
+    .experience-box-content{
+        width: 100%;
+    }
+}
+/*Skill*/
+.Skills{
+    width: 100%;
+}
+.center{
+    margin: 30px 0;
+
+    padding: 20px;
+    float: left;
+}
+
+.center h1{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center .skillbox{
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.center .skillbox h3{
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 16px;
+}
+.skillbox p{
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-size: 16px;
+}
+.skillbox .skill{
+    clear: both;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+.skillbox .skill .skill_level1{
+    position: relative;
+    background: linear-gradient(to right, #225470, #5285a3);
+    height: 100%;
+}
+.skillbox .skill .skill_level2{
+    position: relative;
+    background: linear-gradient(to right, rgb(199, 92, 87), rgb(206, 163, 162));
+    height: 100%;
+}
+.skillbox .skill .skill_level1::before, .skillbox .skill .skill_level2::before{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+.skillbox .skill .html{
+    width: 90%;
+}
+.skillbox .skill .css{
+    width: 85%;
+}
+.skillbox .skill .javascript{
+    width: 50%; 
+}
+.skillbox .skill .jquery{
+    width: 30%;
+}
+.skillbox .skill .boostrapt{
+    width: 40%;
+}
+/**/
+.Skills:hover .skillbox .skill .html{
+    animation: html 1s;
+}
+.Skills:hover .skillbox .skill .css{
+    animation: css 1s;
+}
+.Skills:hover .skillbox .skill .javascript{
+    animation: javascript 1s;
+}
+.Skills:hover .skillbox .skill .jquery{
+    animation: jquery 1s;
+}
+.Skills:hover .skillbox .skill .boostrapt{
+    animation: boostrapt 1s;
+}
+
+@keyframes html{
+    from{
+        width:0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes css{
+    from{
+        width:0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes javascript{
+    from{
+        width:0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes jquery{
+    from{
+        width:0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+@keyframes boostrapt{
+    from{
+        width:0%;
+    }
+    to{
+        width: 40%;
+    }
+}
+.skillbox .skill .sketch{
+    width: 65%;
+}
+.skillbox .skill .photoshop{
+    width: 30%;
+}
+.skillbox .skill .axure{
+    width: 85%;
+    
+}
+.skillbox .skill .uidesign{
+    width: 50%;
+}
+.skillbox .skill .office{
+    width: 95%;
+}
+/**/
+.Skills:hover .skillbox .skill .sketch{
+    animation: sketch 1s;
+}
+.Skills:hover .skillbox .skill .photoshop{
+    animation: photoshop 1s;
+}
+.Skills:hover .skillbox .skill .axure{
+    animation: axure 1s;
+}
+.Skills:hover .skillbox .skill .uidesign{
+    animation: uidesign 1s;
+}
+.Skills:hover .skillbox .skill .office{
+    animation: office 1s;
+}
+
+@keyframes sketch{
+    from{
+        width:0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes photoshop{
+    from{
+        width:0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+@keyframes axure{
+    from{
+        width:0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes uidesign{
+    from{
+        width:0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes office{
+    from{
+        width:0%;
+    }
+    to{
+        width: 95%;
+    }
+}
+
+/*project*/
+.Project{
+    width: 100%;
+}
+.project-wrap{
+    max-width: 100%;
+    margin: 50px 0;
+}
+.project-wrap .project-item{
+    /*height: 400px;*/
+    background-color: #5285a3;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.project-wrap .project-item img{
+    width: 100%;
+    transition: 0.5s;
+}
+.project-wrap .project-item:hover img{
+    transform: scale(1.2);
+}
+.project-wrap .project-item .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.project-wrap .project-item:hover .mask{
+    opacity: 1;
+}
+.project-wrap .project-item .mask .content{
+    position: absolute;
+    bottom: 25px;
+    margin: 0 20px;
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+.project-wrap .project-item:hover .mask .content{
+    transform: translateY(0px);
+}
+.project-wrap .project-item .mask .content h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*contact*/
+.Contact{
+    background: lightblue url("../images/Kelly Sikkema.jpg") no-repeat fixed center; 
+    min-height: 100vh;
+    background-size: cover;
+    /*position: relative;*/
+}
+
+.Contact-bg{
+    background: rgba(255, 255, 255, 0.2);
+    /*position: absolute;*/
+    width: 100%;
+    min-height: 100vh;   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.contact-form{
+    margin: 0 0 0 200px;
+    padding: 20px;
+    width: 450px;
+    background-color:  rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.contact-form h3{
+    text-align: center;
+}
+.contact-form .form-p{
+    padding: 20px;   
+}
+.form{
+    margin: 20px;
+}
+.form p{
+    font-weight: bold;
+    padding: 5px 5px 5px 0;
+}
+.form input[type=text],.form input[type=email], .form textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.form textarea{
+    height: 100px;
+    min-height: 40px;
+    max-height: 250px;
+}
+.form .submit{
+    display: flex;
+    justify-content: center;
+}
+.form input[type=submit]{
+    margin: 10px auto;
+    width: 200px;
+    height: 45px;;
+    background-color:  rgb(199, 92, 87);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form input[type=submit]:hover{
+    background-color: rgb(212, 140, 138);
+}
+
+@media (max-width: 768px){
+    
+    .Contact-bg{
+        justify-content: center;
+    }
+    .contact-form{
+        margin: 0;
+        width: 100%;
+    }
+    
+}
+
+
+/*footer*/
+.Footer{
+    width: 100%;
+    height: 75px;
+    background-color: #225470;     
+}
